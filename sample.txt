@@ -1,0 +1,11 @@
+FRC Command Based Robot Template
+--------------------------------
+
+This program is the basis for a command based robot program. You should look at all the files in this template and make edits where indicated in the source code.
+
+
+One more time.  This time from Tag.
+
+Seem to be OK, checking again to make sure...
+
+Even rebuild works..
