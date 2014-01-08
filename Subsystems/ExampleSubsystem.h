@@ -16,7 +16,7 @@ private:
 public:
 	ExampleSubsystem();
 	void InitDefaultCommand();
-	void On();					//Relay On
+	void On();					// Relay On
 	void Off();					// Relay Off
 };
 

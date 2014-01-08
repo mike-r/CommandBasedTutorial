@@ -174,6 +174,10 @@ CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Comma
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/DriveMotorOneSec.o : $(PRJ_ROOT_DIR)/Commands/DriveMotorOneSec.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/ExampleCommand.o : $(PRJ_ROOT_DIR)/Commands/ExampleCommand.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -193,6 +197,7 @@ CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsy
 OBJECTS_CommandBasedTutorial_partialImage = CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/CommandBase.o \
 	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/CommandBasedRobot.o \
 	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/DriveMotorCommand.o \
+	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/DriveMotorOneSec.o \
 	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/ExampleCommand.o \
 	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/OI.o \
 	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsystems/ExampleSubsystem.o \
@@ -211,8 +216,8 @@ CommandBasedTutorial_partialImage/$(MODE_DIR)/CommandBasedTutorial_partialImage_
 force : 
 
 DEP_FILES := CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/CommandBase.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/CommandBasedRobot.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/DriveMotorCommand.d \
-	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/ExampleCommand.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/OI.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsystems/ExampleSubsystem.d \
-	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsystems/MotorControlSubsystem.d
+	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/DriveMotorOneSec.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Commands/ExampleCommand.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/OI.d \
+	 CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsystems/ExampleSubsystem.d CommandBasedTutorial_partialImage/$(MODE_DIR)/Objects/CommandBasedTutorial/Subsystems/MotorControlSubsystem.d
 -include $(DEP_FILES)
 
 

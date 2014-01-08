@@ -1,6 +1,7 @@
 #include "OI.h"
 #include "Commands/ExampleCommand.h"
 #include "Commands/DriveMotorCommand.h"
+#include "Commands/DriveMotorOneSec.h"
 #include "Robotmap.h"
 
 OI::OI() {
@@ -15,4 +16,7 @@ OI::OI() {
 	
 	button3 = new JoystickButton(rightJoy, 3);
 	button3->WhenReleased(new ExampleCommand());
+	
+	button4 = new JoystickButton(rightJoy, 4);
+	button4->WhenPressed(new DriveMotorOneSec());
 }

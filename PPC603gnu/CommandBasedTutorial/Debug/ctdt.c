@@ -13,6 +13,8 @@ void _GLOBAL__I__ZN11CommandBaseC2EPKc();
 
 void _GLOBAL__I__ZN14ExampleCommandC2Ev();
 
+void _GLOBAL__I__ZN16DriveMotorOneSecC2Ev();
+
 void _GLOBAL__I__ZN16ExampleSubsystemC2Ev();
 
 void _GLOBAL__I__ZN17DriveMotorCommandC2Ev();
@@ -79,6 +81,7 @@ void (*_ctors[])() =
     _GLOBAL__I__Z20FRC_userClassFactoryv,
     _GLOBAL__I__ZN11CommandBaseC2EPKc,
     _GLOBAL__I__ZN14ExampleCommandC2Ev,
+    _GLOBAL__I__ZN16DriveMotorOneSecC2Ev,
     _GLOBAL__I__ZN16ExampleSubsystemC2Ev,
     _GLOBAL__I__ZN17DriveMotorCommandC2Ev,
     _GLOBAL__I__ZN21MotorControlSubsystemC2Ev,
@@ -117,6 +120,8 @@ void _GLOBAL__D__Z20FRC_userClassFactoryv();
 void _GLOBAL__D__ZN11CommandBaseC2EPKc();
 
 void _GLOBAL__D__ZN14ExampleCommandC2Ev();
+
+void _GLOBAL__D__ZN16DriveMotorOneSecC2Ev();
 
 void _GLOBAL__D__ZN16ExampleSubsystemC2Ev();
 
@@ -174,6 +179,7 @@ void (*_dtors[])() =
     _GLOBAL__D__Z20FRC_userClassFactoryv,
     _GLOBAL__D__ZN11CommandBaseC2EPKc,
     _GLOBAL__D__ZN14ExampleCommandC2Ev,
+    _GLOBAL__D__ZN16DriveMotorOneSecC2Ev,
     _GLOBAL__D__ZN16ExampleSubsystemC2Ev,
     _GLOBAL__D__ZN17DriveMotorCommandC2Ev,
     _GLOBAL__D__ZN21MotorControlSubsystemC2Ev,

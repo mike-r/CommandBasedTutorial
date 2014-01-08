@@ -12,6 +12,7 @@ public:
 	JoystickButton* button1;		// Trigger
 	JoystickButton* button2;		// ??
 	JoystickButton* button3;		// Unknown
+	JoystickButton* button4;		// On left top of joystick
 };
 
 #endif

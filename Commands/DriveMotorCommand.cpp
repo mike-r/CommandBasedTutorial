@@ -7,7 +7,7 @@ DriveMotorCommand::DriveMotorCommand() {
 
 // Called just before this Command runs the first time
 void DriveMotorCommand::Initialize() {
-	
+	motorControlSubsystem->Drive(0);		// Shutdown motor	
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -28,4 +28,5 @@ void DriveMotorCommand::End() {
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void DriveMotorCommand::Interrupted() {
+	motorControlSubsystem->Drive(0);		// Shutdown motor
 }
